@@ -1,0 +1,148 @@
+/*ALL PAGES*/
+.header {
+  grid-column: span 2 / span 2;
+  height: auto;
+  align-self: center;
+  width: auto;
+  text-align: center;
+}
+.navigationelement {
+  border: none;
+}
+/*INDEX / HOMEPAGE*/
+.body-index {
+  background-color: #000000;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-image: url(./images/clouds.jpg);
+}
+.parent-index {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  
+  gap: 5px;
+  height: 100%;
+  border: none;
+}
+.maintxt {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  width: 1fr;
+  overflow-wrap: break-word;
+}
+.specs {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  width: auto;
+  height: auto;
+
+}
+.misc {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  overflow-wrap: break-word;
+}
+.thingsidontlike {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+div {
+  padding: 8px;
+  border: 1px solid white
+}
+a {
+  color: yellow;
+}
+.center {
+  text-align: center
+} 
+table {
+  border-collapse: collapse; /* Remove spacing between cells */
+  border: 1px solid black; /* Add outer border */
+}
+#dontlike {
+  width: 100%;
+  border: 2px solid rgba(255, 255, 0, 0);
+}
+#dontlike li {
+  margin-left: 0%;
+  text-indent: 0px
+}
+td, th {
+  border: 1px solid rgb(185, 185, 185); /* Add inner borders to cells and headers */
+  padding: 5px;
+}
+/*TECHSPECS*/
+.body-techspecs {
+  background-color: #000000;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-image: url(./images/rails_dark.jpg);
+}
+.parent-techspecs {
+  border: none;
+  display: grid;
+  grid-template-columns: 66% 34%;
+  grid-template-rows: auto ;
+  gap: 5px;
+}
+.main-text {
+  overflow-wrap: break-word;
+}
+/*GALLERY*/
+.body-gallery {
+  background-color: #070709;
+  color: #ffffff;
+  background-repeat: repeat-y;
+  background-size: 100vw 100vh;
+  background-image: url(./images/clouds.jpg);
+}
+.body-gallerychild {
+  background-color: #070709;
+  color: #ffffff;
+  background-repeat: repeat-y;
+  background-size: 100vw 100vh;
+  background-image: url(./images/clouds.jpg);
+}
+.main-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto, 2);
+  grid-template-rows: repeat(auto, 4);
+  border: none;
+}
+
+.container-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adds space between grid items */
+}
+.container-gallerychild {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  gap: 10px; /* Adds space between grid items */
+}
+.tile {
+  border: 1px solid #ccc; /* Adds borders around grid items */
+  padding: 10px; /* Adds padding inside grid items */
+  text-align: center;
+  
+}
+
+.tile img {
+  width: 95%;
+  height: auto;
+  object-fit: scale-down; /* Ensures images cover the area without stretching */
+}
+
+.tile p a {
+  color: inherit; /* Inherits the color of the parent element */
+  text-decoration: none; /* Removes underline from links */
+}
+#lamp-post {
+  color: yellow;
+}
