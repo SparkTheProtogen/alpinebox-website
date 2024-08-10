@@ -90,23 +90,30 @@ td, th {
   grid-template-rows: auto ;
   gap: 5px;
 }
-@media only screen and (max-width: 1080px) {
-  .responsive-container {
+
+@media only screen and (max-width: 768px) {
+  .parent-techspecs {
     border: none;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     gap: 5px;
   }
-  .responsive-container {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
+  .main-text {
+    grid-column-start: 1;
     grid-row-start: 2;
   }
   .otherdiv {
-    align-content: center;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    align-items: center;
   }
-}
+  .otherdiv table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+} /*end media query*/
 .main-text {
   overflow-wrap: break-word;
 }
