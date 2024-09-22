@@ -15,7 +15,7 @@
   border: none;
 }
 body {
-  font-family: 'YourFontName', sans-serif;
+  font-family: 'NotoSerif', sans-serif;
 }
 /*INDEX / HOMEPAGE*/
 .body-index {
@@ -23,7 +23,7 @@ body {
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  background-image: url(./images/clouds.jpg);
+  background-image: url(./images/thumbnails/clouds-t.jpg);
 }
 .parent-index {
   display: grid;
@@ -89,7 +89,7 @@ td, th {
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  background-image: url(./images/rails_dark.jpg);
+  background-image: url(./images/thumbnails/rails_dark-t.jpg);
 }
 .parent-techspecs {
   border: none;
@@ -132,14 +132,14 @@ td, th {
   color: #ffffff;
   background-repeat: repeat-y;
   background-size: 100vw 100vh;
-  background-image: url(./images/clouds.jpg);
+  background-image: url(./images/thumbnails/clouds-t.jpg);
 }
 .body-gallerychild {
   background-color: #070709;
   color: #ffffff;
   background-repeat: repeat-y;
   background-size: 100vw 100vh;
-  background-image: url(./images/clouds.jpg);
+  background-image: url(./images/thumbnails/clouds-t.jpg);
 }
 .main-gallery {
   display: grid;
