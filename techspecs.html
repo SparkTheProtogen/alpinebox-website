@@ -23,9 +23,19 @@
                 <div class="main-text"> 
                     <h2 class="center">How is this site constructed?</h2>
                     <h3 class="center">Hardware</h3>
-                    <p>The current server is a HP 280 G2 I got for 15GBP at a car boot sale, the previous iteration of the "alpinebox" as I call it was a generic "gaming" PC with an AMD A4 6300 CPU and a wifi card from 2003 (D-Link DWL-G520) plus 8GB of DDR3 RAM, the 120GB SSD is being re-used here because it is quiet and 2.5" meaning I can fit two drives in the one 3.5" bay I have in this new iteration of the box, one for system and a 500GB HDD for an FTP server, maybe even with nextcloud or something similar.</p>
+                    <p>The current server is a HP 280 G2 I got for 15GBP at a car boot sale, the previous iteration of the "alpinebox" as I call it was a generic "gaming" PC with an AMD A4 6300 CPU and a wifi card from 2003 (D-Link DWL-G520) 
+                        plus 8GB of DDR3 RAM, the 120GB SSD is being re-used here because it is quiet and 2.5" meaning I can fit two drives in the one 3.5" bay I have in this new iteration of the box, one for system and a 500GB HDD for an FTP 
+                        server, maybe even with nextcloud or something similar.
+                        <br>
+                        <br>
+                        Eventually i plan to install an i7-7700T in this box but that's when I need to upgrade, so far two cores are sufficient for my needs.
+                    </p>
                     <h3 class="center">Software</h3>
-                    <p>I use Alpine Linux as an OS because it is made to be compact and secure, therefore saving storage space, for hosting I used to run Apache2 directly but then switched to Nginx due to its' simplicity and docker for ease of management because I'm also running pihole on this same server, as for my nginx configuration it is as follows: I use the <a href="https://hub.docker.com/_/nginx/">official nginx container</a> provided from the <a href="https://hub.docker.com/">docker hub</a> with the config mapped from the host to nginx's config directory as read-only and /var/www mapped over with my site neatly kept in the "alpinebox" folder.</p>
+                    <p>I use Alpine Linux as an OS because it is made to be compact and secure, therefore saving storage space, for hosting I used to run Apache2 directly but then switched to Nginx due to its' simplicity and docker 
+                        for ease of management because I'm also running pihole on this same server, as for my nginx configuration it is as follows: I use the <a href="https://hub.docker.com/_/nginx/">official nginx container</a> provided 
+                        from the <a href="https://hub.docker.com/">docker hub</a> with the config mapped from the host to nginx's config directory as read-only and /var/www mapped over with my site neatly kept in the "alpinebox" folder. 
+                        <br> <br> As for HTTPS I use <a href="https://letsencrypt.org/">Let's Encrypt</a>'s certbot package with crontab set to renew the certs on my server every so often, as mentioned in the log on the index page I use a custom 
+                        dockerfile which I thought to be a daunting task at first but in the end it was braindead easy, now my website doesn't invoke any "this site could be malicious" type pages to pop up before users access the site.</p>
                 </div>
                 
                 <div class="otherdiv">
@@ -41,7 +51,7 @@
                         </tr>
                         <tr>
                             <td>Network card</td>
-                            <td>Realtek RTL8111HSH</td>
+                            <td>Realtek RTL8111HSH (onboard)</td>
                         </tr>
                         <tr>
                             <td>OS</td>

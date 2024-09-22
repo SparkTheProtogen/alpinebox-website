@@ -1,3 +1,8 @@
+/* Load the font */
+@font-face {
+  font-family: 'NotoSerif';
+  src: url('./fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf') format('truetype');
+}
 /*ALL PAGES*/
 .header {
   grid-column: span 2 / span 2;
@@ -8,6 +13,9 @@
 }
 .navigationelement {
   border: none;
+}
+body {
+  font-family: 'YourFontName', sans-serif;
 }
 /*INDEX / HOMEPAGE*/
 .body-index {
@@ -118,6 +126,7 @@ td, th {
   overflow-wrap: break-word;
 }
 /*GALLERY*/
+
 .body-gallery {
   background-color: #070709;
   color: #ffffff;
@@ -169,4 +178,18 @@ td, th {
 }
 #lamp-post {
   color: yellow;
+}
+@media only screen and (max-width: 768px) {
+  .container-gallery {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px; /* Adds space between grid items */
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1399px) {
+  .container-gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px; /* Adds space between grid items */
+  }
 }
