@@ -1,8 +1,13 @@
 /* Load the font */
+
 @font-face {
-  font-family: 'NotoSerif';
-  src: url('./fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-family: 'Wingdings';
+  src: url('./fonts/Wingdings/wingding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 /*ALL PAGES*/
 .header {
   grid-column: span 2 / span 2;
@@ -14,9 +19,11 @@
 .navigationelement {
   border: none;
 }
+
 body {
-  font-family: 'NotoSerif', sans-serif;
+  font-family: 'Liberation Sans', 'Arial Bold', sans-serif;
 }
+
 /*INDEX / HOMEPAGE*/
 .body-index {
   background-color: #000000;
