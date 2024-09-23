@@ -7,10 +7,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Liberation Sans';
+  src: url(./fonts/liberation_sans/LiberationSans-Regular.ttf) format('truetype');
+  font-weight: 450;
+}
 
 /*ALL PAGES*/
 .header {
-  grid-column: span 2 / span 2;
+  grid-column: 1 / -1;
   height: auto;
   align-self: center;
   width: auto;
@@ -44,7 +49,7 @@ body {
 .maintxt {
   grid-column-start: 1;
   grid-row-start: 2;
-  width: 1fr;
+  width: auto;
   overflow-wrap: break-word;
 }
 .specs {
@@ -101,11 +106,21 @@ td, th {
 .parent-techspecs {
   border: none;
   display: grid;
-  grid-template-columns: 66% 34%;
-  grid-template-rows: auto ;
+  
+  grid-template-rows: auto auto;
+  grid-template-columns: 66% 33%;
   gap: 5px;
 }
-
+.main-text {
+  grid-column: 1;
+  grid-row: 2;
+  overflow-wrap: break-word;
+}
+.otherdiv {
+  grid-column: 2;
+  grid-row: 2;
+  
+}
 @media only screen and (max-width: 768px) {
   .parent-techspecs {
     border: none;
@@ -129,9 +144,7 @@ td, th {
     align-items: center;
   }
 } /*end media query*/
-.main-text {
-  overflow-wrap: break-word;
-}
+
 /*GALLERY*/
 
 .body-gallery {
