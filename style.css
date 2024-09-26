@@ -1,7 +1,7 @@
 /* Load the font */
 
 @font-face {
-  font-family: 'Wingdings';
+  font-family: 'ServerWingdings';
   src: url('./fonts/Wingdings/wingding.woff') format('woff');
   font-weight: normal;
   font-style: normal;
