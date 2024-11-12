@@ -28,7 +28,9 @@
 body {
   font-family: 'Liberation Sans', 'Arial Bold', sans-serif;
 }
-
+a {
+  text-decoration: underline;
+}
 /*INDEX / HOMEPAGE*/
 .body-default {
   background-color: #000000;
