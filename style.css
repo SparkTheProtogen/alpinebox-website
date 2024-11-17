@@ -193,7 +193,7 @@ td, th {
   border: 1px solid #ccc; /* Adds borders around grid items */
   padding: 10px; /* Adds padding inside grid items */
   text-align: center;
-  
+  display: grid;
 }
 
 .tile img {
@@ -201,7 +201,9 @@ td, th {
   height: auto;
   object-fit: scale-down; /* Ensures images cover the area without stretching */
 }
-
+.caption {
+  font-size: 110%;
+}
 .tile p a {
   color: inherit; /* Inherits the color of the parent element */
   text-decoration: none; /* Removes underline from links */
