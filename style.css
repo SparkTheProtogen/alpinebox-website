@@ -37,6 +37,7 @@ a {
   color: #ffffff;
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: url(./images/thumbnails/clouds-t.jpg);
 }
 .parent-default {
@@ -103,6 +104,7 @@ td, th {
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
+  background-attachment: fixed;
   background-image: url(./images/thumbnails/rails_dark-t.jpg);
 }
 .parent-techspecs {
@@ -158,6 +160,7 @@ td, th {
   color: #ffffff;
   background-repeat: repeat-y;
   background-size: 100vw 100vh;
+  background-attachment: fixed;
   background-image: url(./images/thumbnails/clouds-t.jpg);
 }
 .body-gallerychild {
@@ -165,6 +168,7 @@ td, th {
   color: #ffffff;
   background-repeat: repeat-y;
   background-size: 100vw 100vh;
+  background-attachment: fixed;
   background-image: url(./images/thumbnails/clouds-t.jpg);
 }
 .main-gallery {
