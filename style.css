@@ -38,8 +38,20 @@ a {
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url(./images/thumbnails/clouds-t.jpg);
+  background-image: url(./images/thumbnails/nofocus_rail_pylons-t.jpg);
 }
+
+@media only screen and (max-width: 768px) { 
+  .body-default {
+    background-color: #000000;
+    color: #ffffff;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(./images/thumbnails/clouds-t.jpg);
+  }
+}
+
 .parent-default {
   display: grid;
   grid-template-rows: auto;
@@ -235,6 +247,23 @@ td, th {
 }
   */
 /*USEFUL LINKS*/
+.body-useful {
+  background-color: #000000;
+  color: #ffffff;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(./images/thumbnails/clouds-t.jpg);
+}
+.parent-useful {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  
+  gap: 5px;
+  height: 100%;
+  border: none;
+}
 .parent-links {
   display: grid;
   grid-template: auto auto / auto;
