@@ -37,6 +37,8 @@
                     from the <a href="https://hub.docker.com/">docker hub</a> with the config mapped from the host to nginx's config directory as read-only and /var/www mapped over with my site neatly kept in the "alpinebox" folder. 
                     <br> <br> As for HTTPS I use <a href="https://letsencrypt.org/">Let's Encrypt</a>'s certbot package with crontab set to renew the certs on my server every so often, as mentioned in the log on the index page I use a custom 
                     dockerfile which I thought to be a daunting task at first but in the end it was rather easy, now my website doesn't invoke any "this site could be malicious" type pages to pop up before users access the site.</p>
+                    <p>Recently I switched over to Debian after Alpine's documentation pages and package selection (or lack thereof) and general quirks (s6 / OpenRC isntead of systemd, ash instead of bash and a weird version of libc (musl libc instead of glibc)) that
+                        drove me to seek out a more mature operating system (UEFI support came as a bonus).</p>
                     <br>
                     <br>
                     <p>You may notice the "Free DNS" link in the navbar, this is how I got a domain (subdomain if you're pedantic) to host my site on, this service is a good, privacy respecting DNS service if you need to
@@ -60,7 +62,7 @@
                     </tr>
                     <tr>
                         <td>OS</td>
-                        <td>Alpine Linux</td>
+                        <td>Debian 12.10</td>
                     </tr>
                     <tr>
                         <td>HTTP daemon</td>
