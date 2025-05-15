@@ -297,7 +297,7 @@ td, th {
   margin-bottom: -25px;
   padding-left: 10px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
   .tile-links {
     flex-direction: column;
   }
