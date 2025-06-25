@@ -66,6 +66,7 @@ a {
   grid-row-start: 2;
   width: auto;
   overflow-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 .specs {
   grid-column-start: 2;
@@ -309,4 +310,16 @@ td, th {
   .tile-desc-links {
     width: auto;
   }
+}
+/*TEXT WALL*/
+.body-textwall {
+  background-color: #000000;
+  color: #ffffff;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(./images/thumbnails/transmission_towers-t.jpg);
+}
+.maintxt summary { 
+  font-size: x-large;
 }
